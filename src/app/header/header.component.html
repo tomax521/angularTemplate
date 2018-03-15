@@ -1,0 +1,13 @@
+<header>
+  <h1>Basic Routing</h1>
+  <nav>
+    <a [routerLink]="['/home']">Home</a>
+    <a [routerLink]="['/about']">About</a>
+    <a [routerLink]="['/article']">Article</a>
+  </nav>
+<select #selectElem (change)="setNewLang(selectElem.value)">
+    <option *ngFor="let lang of langs" [value]="lang.value" [selected]="lang.value === currentLang">
+        {{lang.name}}
+    </option>
+</select>
+</header>
