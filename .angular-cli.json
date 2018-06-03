@@ -25,6 +25,7 @@
       "prefix": "app",
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../node_modules/swiper/dist/css/swiper.css",
         "styles.scss"
       ],
       "scripts": [],

@@ -5,10 +5,9 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; 
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
+import { KSSwiperModule } from "angular2-swiper";
 
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -39,6 +38,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     NgbModule.forRoot(),
     AppRoutingModule,
     HttpClientModule,
+    KSSwiperModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

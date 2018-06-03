@@ -1,3 +1,23 @@
 p{
 	font-size: 40px;
 }
+
+.swiperContain{
+	position: relative;
+	img{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	button.btn{
+		z-index: 10;
+		position: absolute;
+		top: 50%;
+	}
+	.btnPrev{
+		left: 0;
+	}
+	.btnNext{
+		right: 0;
+	}
+}

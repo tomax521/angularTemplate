@@ -1,3 +1,14 @@
+
+<div class="swiperContain">
+	<ks-swiper-container [options]="swipeOptions">
+		<ks-swiper-slide *ngFor="let item of data"><img src="http://placehold.it/1920x768"></ks-swiper-slide>
+	</ks-swiper-container>
+	<div class="swiper-pagination"></div>
+	<button class="btn btnPrev" (click)="movePrev()">Prev</button>
+	<button class="btn btnNext" (click)="moveNext()">Next</button>
+</div>
+
+
 <img src="assets/images/logo.png">
 <p>{{ 'HOME.TITLE' | translate }}</p>
 <a [routerLink]="['/about']">About</a>
